@@ -19,7 +19,13 @@
         two-up {
             margin-inline: auto;
             width: max-content;
-            overflow: hidden;
+            @media  (max-width: 430px) {
+                overflow: hidden;        
+            }
+
+            ::selection {
+                background: transparent;
+            }
         }
         
         .solution {
